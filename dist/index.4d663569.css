@@ -1,0 +1,205 @@
+@keyframes heartbeat {
+  from {
+    transform-origin: center;
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.div1 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 1 / 1 / 2 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.p-div1 {
+  width: 70%;
+}
+
+.div2 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 2 / 2 / 3 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div3 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 3 / 1 / 4 / 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div4 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 4 / 2 / 5 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div5 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 5 / 1 / 6 / 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div6 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 6 / 2 / 7 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div7 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 7 / 1 / 8 / 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div8 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 8 / 2 / 9 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div9 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 9 / 1 / 10 / 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div10 {
+  grid-area: 10 / 2 / 11 / 3;
+}
+
+.div11 {
+  text-align: center;
+  flex-direction: column;
+  grid-area: 11 / 1 / 12 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div12 {
+  grid-area: 12 / 1 / 13 / 3;
+}
+
+.div13 {
+  grid-area: 13 / 1 / 14 / 3;
+}
+
+h1 {
+  color: #fff;
+  animation: 5s bounce;
+}
+
+.h1_title {
+  justify-content: center;
+  display: flex;
+}
+
+h2 {
+  color: #fff;
+  grid-column: 1;
+}
+
+h3, p {
+  color: #fff;
+}
+
+.animate__bounce {
+  transform-origin: bottom;
+  animation-name: bounce;
+}
+
+.oppa {
+  animation-name: jello, slideOutRight;
+  animation-delay: 0s, 2s;
+}
+
+.img_heart {
+  animation: 1.5s ease-in-out infinite both heartbeat;
+}
+
+#volume {
+  background: #000;
+}
+
+text {
+  fill: #fff;
+  text-anchor: end;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (width <= 767px) {
+  main {
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11 {
+    grid-column: 1;
+  }
+}
+/*# sourceMappingURL=index.4d663569.css.map */

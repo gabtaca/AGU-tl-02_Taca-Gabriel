@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.4d663569.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Animate.css</title>
+    <!-- Include RGraph library scripts -->
+    <script src="/index.faaad98b.js"></script>
+    <script src="/index.7159f000.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="h1_title animate__animated animate__bounce">AGU-tl-02_Taca-Gabriel</h1>
+    </header>
+
+    <main>
+        <div class="div1">
+            <figure class="img_heart">
+                <img src="/04ee9d640ab66c7f62048ed76a1cfaae.0e2cc203.gif" width="300" alt="ourson">
+            </figure>
+            <p class="p-div1">Dans un royaume lointain, caché au cœur d'une forêt enchantée, se tient chaque année la Grande Compétition de
+                    Danse des Créatures Magiques. Des êtres extraordinaires se rassemblent pour ce
+                    spectacle éblouissant.
+                
+                    Sous les lumières scintillantes de la vallée de Lumina, les participants exécutent des mouvements gracieux et
+                    synchronisés, leurs pas créant des motifs enchanteurs sur le sol. Leurs ailes, plumes, et crinières brillent de
+                    mille feux, ajoutant une touche de magie à chaque danse.
+                
+                    Le clou de la soirée est la performance des créatures majestueuses, dont la danse envoûtante laisse le public en
+                    admiration. Dans cette atmosphère féerique, chacun célèbre la beauté et la magie de ce monde fantastique, où le
+                    temps semble suspendu, et où l'imagination prend son envol.</p>
+        </div>
+
+        <div class="div2">
+            <div class="fl-div2">
+                <h2>Pti chat qui danse</h2>
+                <img class="wow animate__animated animate__jello" src="/—Pngtree—cartoon%20unicorn%20cat%20dancing_6365759.feb4a7ef.png" width="300" alt="Licorne qui danse">
+                </div>
+        </div>
+        <div class="div3">
+            <div class="fl-div3">
+                <h2>Pti chat qui dab</h2>
+                <img class="wow animate__animated animate__rubberBand" src="/—Pngtree—cute%20cat%20dance%20and%20dabbing_6108017.abe5c6cc.png" width="300" alt="Chat qui danse">
+            </div>
+        </div>
+        <div class="div4">
+            <h2>Oppa gangnam style</h2>
+            <img class="oppa wow animate__animated animate__jello animate__slideOutRight" src="/—Pngtree—dance%20cartoon%20dance%20cartoon_7134289.9683d9ef.png" width="300" alt="Cartoon qui danse">
+        </div>
+        <div class="div5">
+            <h2>MOOOOOOOoooooo</h2>
+            <img class="wow animate__animated animate__swing" src="/—Pngtree—dancing%20milk%20cow_7302250.9cdd65d0.png" width="300" alt="Vache qui danse">
+        </div>
+        <div class="div6">
+            <h2>Loutre qui a de la classe</h2>
+            <img class="wow animate__animated animate__flip" src="/—Pngtree—dancing%20otter%20hat%20cute%20michael_4971266.edbcb47c.png" width="300" alt="Loutre qui danse">
+        </div>
+        <div class="div7">
+            <h2>Licorny!</h2>
+            <img class="wow animate__animated animate__bounce" src="/—Pngtree—unicorn%20worker%20dabbing%20dance%20illustration_6108011.d8f5cf49.png" width="300" alt="Licorne qui danse">
+        </div>
+        <div class="div8">
+            <h2>Akunamatata</h2>
+            <img class="wow animate__animated animate__rotateInDownLeft" src="/—Pngtree—cute%20funny%20lion%20is%20dacing_15774318.9084b86e.png" width="300" alt="Lion qui danse">
+        </div>
+        <div class="div9">
+            <h2>Pear pressure to dance!</h2>
+            <img class="wow animate__animated animate__heartBeat" src="/—Pngtree—dancing%20cute%20cartoon%20anthropomorphic%20pears_4461190.f89b15b5.png" width="300" alt="Poire qui danse">
+        </div>
+        <div class="div10"><p>Canvas</p>
+            <canvas id="monCanvas" width="60px" height="60px"></canvas>
+            
+            <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+            <script>const canvas = document.getElementById("monCanvas");
+const ctx = canvas.getContext("2d");
+ctx.strokeStyle = "#fcba03";
+ctx.fillStyle = "#fcba03";
+ctx.moveTo(10, 10);
+ctx.lineTo(20, 10);
+ctx.lineTo(50, 60);
+ctx.lineTo(40, 60);
+ctx.lineTo(10, 10);
+ctx.moveTo(40, 10);
+ctx.lineTo(50, 10);
+ctx.lineTo(20, 60);
+ctx.lineTo(10, 60);
+ctx.closePath();
+ctx.stroke();
+ctx.fill();
+
+</script>
+        </div>
+        <div class="div11">
+            <h3>Meilleurs danseurs!</h3>
+            <div class="graph" style="float: right">
+                <div style="width: 700px; height: 300px" id="chart-container"></div>
+            </div>
+        
+
+
+            <div class="div11">
+                <h3>Meilleurs danseurs!</h3>
+                <div class="graph" style="float: right">
+                    <div style="width: 600px; height: 200px" id="chart-container"></div>
+                </div>
+            
+                <script>// The "raw" data. This array contains the data, the label and the color.
+data = [
+    [
+        4,
+        "Poire",
+        "red"
+    ],
+    [
+        8,
+        "Chat rose",
+        "orange"
+    ],
+    [
+        6,
+        "Loutrageuse Loutre",
+        "yellow"
+    ],
+    [
+        5,
+        "Licorne",
+        "green"
+    ]
+];
+// Sort the data array defined above using the JavaScript sort function.
+data.sort(function(a, b) {
+    return b[0] - a[0];
+});
+// Initialise the 'extracted' arrays that are given to RGraph
+data_extracted = [];
+labels_extracted = [];
+colors_extracted = [];
+// Go through the main data and separate out the different bits of
+// data into the relevant arrays
+data.forEach(function(v, k, arr) {
+    data_extracted.push(v[0]);
+    labels_extracted.push(v[1] + " (" + v[0] + "%)");
+    colors_extracted.push(v[2]);
+});
+// Create the Horizontal Bar chart using the data that was extracted above.
+hbar = new RGraph.SVG.HBar({
+    id: "chart-container",
+    data: data_extracted,
+    options: {
+        yaxisLabels: labels_extracted,
+        xaxis: false,
+        yaxis: false,
+        colors: [
+            "red",
+            "orange",
+            "yellow",
+            "green"
+        ],
+        colorsSequential: true,
+        backgroundGridHlines: false,
+        backgroundGridBorder: false,
+        marginInner: 10,
+        responsive: [
+            {
+                maxWidth: null,
+                parentCss: {
+                    "float": "right",
+                    textAlign: "none"
+                }
+            },
+            {
+                maxWidth: 700,
+                parentCss: {
+                    "float": "none",
+                    textAlign: "center"
+                }
+            }
+        ]
+    }
+}).draw();
+const labelColors = [
+    "white",
+    "white",
+    "white",
+    "white"
+]; // Define your colors
+const svgTextElements = document.querySelectorAll("#chart-container svg text");
+svgTextElements.forEach((textElement, index)=>{
+    if (index < labels_extracted.length) textElement.setAttribute("fill", labelColors[index]); // Apply white color to y-axis labels
+});
+// Loop through the coordinates that are stored in the Horizontal Bar
+// object.
+for(var i = 0; i < hbar.coords.length; ++i){
+    // Get the credentials of the bars on the Horizontal Bar chart from the
+    // attributes of the SVG elements.
+    var x = parseFloat(hbar.coords[i].element.getAttribute("x")), y = parseFloat(hbar.coords[i].element.getAttribute("y")), w = parseFloat(hbar.coords[i].element.getAttribute("width")), h = parseFloat(hbar.coords[i].element.getAttribute("height")), c = hbar.coords[i].element.getAttribute("fill");
+    // Add the circles at the end of each bar. Remember that this doesn't need to
+    // be in a draw event like with the canvas charts.
+    RGraph.SVG.create({
+        svg: hbar.svg,
+        type: "circle",
+        attr: {
+            cx: x + w,
+            cy: y + h / 2,
+            r: 30,
+            fill: c,
+            stroke: "white",
+            "stroke-width": 7
+        }
+    });
+    // This adds the text that sits inside the circles and indicates
+    // the position (ie 1-4).
+    RGraph.SVG.text({
+        object: hbar,
+        x: x + w,
+        y: y + h / 2,
+        text: i + 1,
+        halign: "center",
+        valign: "center",
+        color: "black",
+        size: 30,
+        bold: true
+    });
+}
+
+</script>
+            </div>
+            </div></main>
+            
+            <footer>
+                <h2>Animations concoctée par <author>Gabriel Taca</author>
+                </h2>
+                <time datetime="2024-07-05">5 juillet 2024</time>
+            </footer>
+            <script src="/index.94f79576.js"></script>
+            <script>new WOW().init();
+
+</script>
+        
+    
+
+<script src="/AGU-tl-02_Taca-Gabriel.59712999.js"></script></body>
+
+</html>

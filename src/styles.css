@@ -1,0 +1,242 @@
+@-webkit-keyframes heartbeat {
+        from {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        10% {
+          -webkit-transform: scale(0.91);
+                  transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          -webkit-transform: scale(0.98);
+                  transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+          -webkit-transform: scale(0.87);
+                  transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+      }
+      @keyframes heartbeat {
+        from {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        10% {
+          -webkit-transform: scale(0.91);
+                  transform: scale(0.91);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          -webkit-transform: scale(0.98);
+                  transform: scale(0.98);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+          -webkit-transform: scale(0.87);
+                  transform: scale(0.87);
+          -webkit-animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+      }
+
+body {
+        background-color: black;
+}
+
+main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+}
+
+.div1 { 
+        grid-area: 1 / 1 / 2 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.p-div1{
+        width: 70%;
+}
+
+.div2 { grid-area: 2 / 2 / 3 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+
+
+.div3 { grid-area: 3 / 1 / 4 / 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+
+.div4 { grid-area: 4 / 2 / 5 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;}
+
+
+.div5 { grid-area: 5 / 1 / 6 / 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.div6 { grid-area: 6 / 2 / 7 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.div7 { grid-area: 7 / 1 / 8 / 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.div8 { grid-area: 8 / 2 / 9 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.div9 { grid-area: 9 / 1 / 10 / 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.div10 { grid-area: 10 / 2 / 11 / 3; }
+
+.div11 { grid-area: 11 / 1 / 12 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+
+
+
+.div12 { grid-area: 12 / 1 / 13 / 3; }
+.div13 { grid-area: 13 / 1 / 14 / 3; }
+
+h1 {
+        color: white;
+        animation: bounce 5s;
+}
+
+.h1_title {
+        display: flex;
+        justify-content: center;
+}
+
+h2 {
+        color: white;
+        grid-column: 1;
+}
+
+h3 {
+        color: white;
+}
+
+p {
+        color: white;
+}
+
+.animate__bounce {
+        animation-name: bounce;
+        transform-origin: center bottom;
+}
+
+.oppa {
+        animation-name: jello, slideOutRight;
+        animation-delay: 0s, 2s;
+}
+
+.img_heart {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+#volume {
+
+        background: rgb(0,0,0); 
+}
+
+text{
+        fill: white;
+        font-size: 12pt;
+        font-weight: normal;
+        font-family: Arial, Verdana, sans-serif;
+        font-style: normal;
+        text-anchor: end;
+}
+
+
+
+@media screen and (max-width: 767px) {
+        main {
+                display: grid;
+                grid-template-columns: 1fr; 
+                grid-template-rows: auto; 
+                grid-gap: 10px; 
+        }
+        .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11 {
+                grid-column: 1;
+        }
+}
