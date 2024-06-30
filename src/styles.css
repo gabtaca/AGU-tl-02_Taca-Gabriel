@@ -1,71 +1,71 @@
 @-webkit-keyframes heartbeat {
         from {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: center center;
-                  transform-origin: center center;
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
         }
         10% {
-          -webkit-transform: scale(0.91);
-                  transform: scale(0.91);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
         }
         17% {
-          -webkit-transform: scale(0.98);
-                  transform: scale(0.98);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
         }
         33% {
-          -webkit-transform: scale(0.87);
-                  transform: scale(0.87);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
         }
         45% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
         }
-      }
-      @keyframes heartbeat {
+}
+@keyframes heartbeat {
         from {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: center center;
-                  transform-origin: center center;
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
         }
         10% {
-          -webkit-transform: scale(0.91);
-                  transform: scale(0.91);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+        -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
         }
         17% {
-          -webkit-transform: scale(0.98);
-                  transform: scale(0.98);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
         }
         33% {
-          -webkit-transform: scale(0.87);
-                  transform: scale(0.87);
-          -webkit-animation-timing-function: ease-in;
-                  animation-timing-function: ease-in;
+        -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
         }
         45% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-animation-timing-function: ease-out;
-                  animation-timing-function: ease-out;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
         }
-      }
+}
 
 body {
         background-color: black;
@@ -79,6 +79,12 @@ main {
         grid-row-gap: 10px;
 }
 
+figcaption {
+        display: flex;
+        color: white;
+        width: 30%;
+}
+
 .div1 { 
         grid-area: 1 / 1 / 2 / 3; 
         display: flex;
@@ -88,7 +94,7 @@ main {
         justify-content: center;
 }
 
-.p-div1{
+.p-div1 {
         width: 70%;
 }
 
@@ -98,6 +104,9 @@ main {
         align-items: center;
         text-align: center;
         justify-content: center;
+        background-image: url(./images/dance_floor1.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 
@@ -107,7 +116,10 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: center;
+        justify-content: end;
+        background-image: url(./images/dance_floor2.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 
@@ -116,7 +128,11 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: center;}
+        justify-content: end;
+        background-image: url(./images/dance_floor3.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 
 
 .div5 { grid-area: 5 / 1 / 6 / 2; 
@@ -125,6 +141,9 @@ main {
         align-items: center;
         text-align: center;
         justify-content: center;
+        background-image: url(./images/dance_floor4.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .div6 { grid-area: 6 / 2 / 7 / 3; 
@@ -132,7 +151,10 @@ main {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: center;
+        justify-content: end;
+        background-image: url(./images/dance_floor5.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .div7 { grid-area: 7 / 1 / 8 / 2; 
@@ -141,6 +163,9 @@ main {
         align-items: center;
         text-align: center;
         justify-content: center;
+        background-image: url(./images/dance_floor6.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .div8 { grid-area: 8 / 2 / 9 / 3; 
@@ -149,6 +174,9 @@ main {
         align-items: center;
         text-align: center;
         justify-content: center;
+        background-image: url(./images/dance_floor7.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .div9 { grid-area: 9 / 1 / 10 / 2; 
@@ -157,9 +185,18 @@ main {
         align-items: center;
         text-align: center;
         justify-content: center;
+        background-image: url(./images/dance_floor8.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
-.div10 { grid-area: 10 / 2 / 11 / 3; }
+.div10 { grid-area: 10 / 2 / 11 / 3; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
 
 .div11 { grid-area: 11 / 1 / 12 / 3; 
         display: flex;
@@ -208,7 +245,13 @@ p {
         animation-delay: 0s, 2s;
 }
 
-.img_heart {
+.img_fig {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.dicso-ball {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
 	animation: heartbeat 1.5s ease-in-out infinite both;
 }
@@ -218,13 +261,17 @@ p {
         background: rgb(0,0,0); 
 }
 
-text{
+text {
         fill: white;
         font-size: 12pt;
         font-weight: normal;
         font-family: Arial, Verdana, sans-serif;
         font-style: normal;
         text-anchor: end;
+}
+
+time {
+        color: white;
 }
 
 

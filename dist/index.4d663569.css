@@ -38,6 +38,12 @@ main {
   display: grid;
 }
 
+figcaption {
+  color: #fff;
+  width: 30%;
+  display: flex;
+}
+
 .div1 {
   text-align: center;
   flex-direction: column;
@@ -53,6 +59,9 @@ main {
 
 .div2 {
   text-align: center;
+  background-image: url("dance_floor1.952672b8.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 2 / 2 / 3 / 3;
   justify-content: center;
@@ -62,24 +71,33 @@ main {
 
 .div3 {
   text-align: center;
+  background-image: url("dance_floor2.029bf377.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 3 / 1 / 4 / 2;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   display: flex;
 }
 
 .div4 {
   text-align: center;
+  background-image: url("dance_floor3.0cf97953.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 4 / 2 / 5 / 3;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   display: flex;
 }
 
 .div5 {
   text-align: center;
+  background-image: url("dance_floor4.481dd23f.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 5 / 1 / 6 / 2;
   justify-content: center;
@@ -89,15 +107,21 @@ main {
 
 .div6 {
   text-align: center;
+  background-image: url("dance_floor5.c295ac03.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 6 / 2 / 7 / 3;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   display: flex;
 }
 
 .div7 {
   text-align: center;
+  background-image: url("dance_floor6.3f0863f7.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 7 / 1 / 8 / 2;
   justify-content: center;
@@ -107,6 +131,9 @@ main {
 
 .div8 {
   text-align: center;
+  background-image: url("dance_floor7.ef70e3ff.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 8 / 2 / 9 / 3;
   justify-content: center;
@@ -116,6 +143,9 @@ main {
 
 .div9 {
   text-align: center;
+  background-image: url("dance_floor8.8c6237ee.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   grid-area: 9 / 1 / 10 / 2;
   justify-content: center;
@@ -124,7 +154,12 @@ main {
 }
 
 .div10 {
+  text-align: center;
+  flex-direction: column;
   grid-area: 10 / 2 / 11 / 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .div11 {
@@ -173,7 +208,13 @@ h3, p {
   animation-delay: 0s, 2s;
 }
 
-.img_heart {
+.img_fig {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.dicso-ball {
   animation: 1.5s ease-in-out infinite both heartbeat;
 }
 
@@ -188,6 +229,10 @@ text {
   font-size: 12pt;
   font-style: normal;
   font-weight: normal;
+}
+
+time {
+  color: #fff;
 }
 
 @media screen and (width <= 767px) {

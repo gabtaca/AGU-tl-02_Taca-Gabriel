@@ -20,34 +20,43 @@
 
     <main>
         <div class="div1">
-            <figure class="img_heart">
-                <img src="./images/04ee9d640ab66c7f62048ed76a1cfaae.gif" width="300" alt="ourson">
+            <figure class="img_fig">
+                <img class="dicso-ball" src="./images/04ee9d640ab66c7f62048ed76a1cfaae.gif" width="300" alt="Animation d'une boule disco">
+                <Figcaption>Le disco est un genre musical et une danse apparus aux États-Unis au milieu des années
+                    1970. Issu des genres funk, soul, pop, salsa et psychédélique, le disco est particulièrement
+                    popularisé pendant les années 1970, et revivra brièvement pendant quelque temps. Le terme dérive
+                    du mot en français « discothèque »</Figcaption>
             </figure>
-            <p class="p-div1">Dans un royaume lointain, caché au cœur d'une forêt enchantée, se tient chaque année la Grande Compétition de
-                    Danse des Créatures Magiques. Des êtres extraordinaires se rassemblent pour ce
-                    spectacle éblouissant.
-                
-                    Sous les lumières scintillantes de la vallée de Lumina, les participants exécutent des mouvements gracieux et
-                    synchronisés, leurs pas créant des motifs enchanteurs sur le sol. Leurs ailes, plumes, et crinières brillent de
-                    mille feux, ajoutant une touche de magie à chaque danse.
-                
-                    Le clou de la soirée est la performance des créatures majestueuses, dont la danse envoûtante laisse le public en
-                    admiration. Dans cette atmosphère féerique, chacun célèbre la beauté et la magie de ce monde fantastique, où le
-                    temps semble suspendu, et où l'imagination prend son envol.</p>
+            <p class="p-div1">Dans un royaume lointain, caché au cœur d'une forêt enchantée, se tient chaque année la
+                Grande Compétition de
+                Danse des Créatures Magiques. Des êtres extraordinaires se rassemblent pour ce
+                spectacle éblouissant.
+
+                Sous les lumières scintillantes de la vallée de Lumina, les participants exécutent des mouvements
+                gracieux et
+                synchronisés, leurs pas créant des motifs enchanteurs sur le sol. Leurs ailes, plumes, et crinières
+                brillent de
+                mille feux, ajoutant une touche de magie à chaque danse.
+
+                Le clou de la soirée est la performance des créatures majestueuses, dont la danse envoûtante laisse le
+                public en
+                admiration. Dans cette atmosphère féerique, chacun célèbre la beauté et la magie de ce monde
+                fantastique, où le
+                temps semble suspendu, et où l'imagination prend son envol.</p>
         </div>
 
         <div class="div2">
             <div class="fl-div2">
                 <h2>Pti chat qui danse</h2>
                 <img class="wow animate__animated animate__jello"
-                    src="./images/—Pngtree—cartoon unicorn cat dancing_6365759.png" width="300" alt="Licorne qui danse">
-                </div>
+                    src="./images/—Pngtree—cartoon unicorn cat dancing_6365759.png" width="300" alt="Chat qui danse">
+            </div>
         </div>
         <div class="div3">
             <div class="fl-div3">
                 <h2>Pti chat qui dab</h2>
                 <img class="wow animate__animated animate__rubberBand"
-                    src="images/—Pngtree—cute cat dance and dabbing_6108017.png" width="300" alt="Chat qui danse">
+                    src="images/—Pngtree—cute cat dance and dabbing_6108017.png" width="300" alt="Chat qui dab">
             </div>
         </div>
         <div class="div4">
@@ -82,15 +91,16 @@
                 src="./images/—Pngtree—dancing cute cartoon anthropomorphic pears_4461190.png" width="300"
                 alt="Poire qui danse">
         </div>
-        <div class="div10"><p>Canvas</p>
+        <div class="div10">
+            <p>Canvas</p>
             <canvas id="monCanvas" width="60px" height="60px"></canvas>
-            
+
             <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
             <script>
                 const canvas = document.getElementById('monCanvas');
                 const ctx = canvas.getContext('2d');
 
-                ctx.strokeStyle = '#fcba03';
+                ctx.strokeStyle = '#fffff';
                 ctx.fillStyle = '#fcba03';
 
                 ctx.moveTo(10, 10);
@@ -109,20 +119,13 @@
                 ctx.fill();
             </script>
         </div>
-        <div class="div11">
-            <h3>Meilleurs danseurs!</h3>
-            <div class="graph" style="float: right">
-                <div style="width: 700px; height: 300px; " id="chart-container"></div>
-            </div>
-        
-
 
             <div class="div11">
                 <h3>Meilleurs danseurs!</h3>
                 <div class="graph" style="float: right">
                     <div style="width: 600px; height: 200px; " id="chart-container"></div>
                 </div>
-            
+
                 <script>
                     // The "raw" data. This array contains the data, the label and the color.
                     data = [
@@ -131,17 +134,17 @@
                         [6, 'Loutrageuse Loutre', 'yellow'],
                         [5, 'Licorne', 'green']
                     ];
-            
+
                     // Sort the data array defined above using the JavaScript sort function.
                     data.sort(function (a, b) {
                         return b[0] - a[0];
                     });
-            
+
                     // Initialise the 'extracted' arrays that are given to RGraph
                     data_extracted = [];
                     labels_extracted = [];
                     colors_extracted = [];
-            
+
                     // Go through the main data and separate out the different bits of
                     // data into the relevant arrays
                     data.forEach(function (v, k, arr) {
@@ -149,7 +152,7 @@
                         labels_extracted.push(v[1] + ' (' + v[0] + '%)')
                         colors_extracted.push(v[2]);
                     });
-            
+
                     // Create the Horizontal Bar chart using the data that was extracted above.
                     hbar = new RGraph.SVG.HBar({
                         id: 'chart-container',
@@ -169,20 +172,20 @@
                             ]
                         }
                     }).draw();
-            
+
                     const labelColors = ['white', 'white', 'white', 'white']; // Define your colors
                     const svgTextElements = document.querySelectorAll('#chart-container svg text');
 
                     svgTextElements.forEach((textElement, index) => {
                         if (index < labels_extracted.length) {
-                        textElement.setAttribute('fill', labelColors[index]); // Apply white color to y-axis labels
-    }
-});
-            
+                            textElement.setAttribute('fill', labelColors[index]); // Apply white color to y-axis labels
+                        }
+                    });
+
                     // Loop through the coordinates that are stored in the Horizontal Bar
                     // object.
                     for (var i = 0; i < hbar.coords.length; ++i) {
-            
+
                         // Get the credentials of the bars on the Horizontal Bar chart from the
                         // attributes of the SVG elements.
                         var x = parseFloat(hbar.coords[i].element.getAttribute('x')),
@@ -190,7 +193,7 @@
                             w = parseFloat(hbar.coords[i].element.getAttribute('width')),
                             h = parseFloat(hbar.coords[i].element.getAttribute('height')),
                             c = hbar.coords[i].element.getAttribute('fill');
-            
+
                         // Add the circles at the end of each bar. Remember that this doesn't need to
                         // be in a draw event like with the canvas charts.
                         RGraph.SVG.create({
@@ -205,7 +208,7 @@
                                 'stroke-width': 7
                             }
                         });
-            
+
                         // This adds the text that sits inside the circles and indicates
                         // the position (ie 1-4).
                         RGraph.SVG.text({
@@ -222,18 +225,18 @@
                     }
                 </script>
             </div>
-            </main>
-            
-            <footer>
-                <h2>Animations concoctée par <author>Gabriel Taca</author>
-                </h2>
-                <time datetime="2024-07-05">5 juillet 2024</time>
-            </footer>
-            <script src="./js/wow.min.js"></script>
-            <script>
-                new WOW().init();
-            </script>
-        </div>
+    </main>
+
+    <footer>
+        <h2>Animations concoctée par <author>Gabriel Taca</author>
+        </h2>
+        <time datetime="2024-07-05">5 juillet 2024</time>
+    </footer>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    </div>
     </main>
 
 </body>
