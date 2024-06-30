@@ -1,21 +1,21 @@
 {
   "name": "agu-tl-02_taca-gabriel",
   "version": "1.0.0",
-  "main": "index.js", // Adjust according to your project's main entry point
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html --no-cache",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.html --no-cache"
   },
   "keywords": [],
-  "author": "Your Name",
+  "author": "",
   "license": "ISC",
-  "description": "Your project description",
+  "description": "",
   "dependencies": {
+    "parcel": "^2.12.0",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
     "animate.css": "^4.1.1",
-    "parcel": "^2.12.0"
+    "parcel": "2.12.0"
   }
 }
